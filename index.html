@@ -4,23 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
     <title>Connor's Momentum</title>
 </head>
 <body>
+    <header>
+        <p>Welcome!</p>
+    </header>
     <div>
-        <div id="clockForm">
-            <p>00:00:00</p>
-            <p>AM</p>
+        <div class="container">
+            <form id="nameForm">
+                <input
+                    type="text"
+                    placeholder="Please let me know your name ..."
+                    required
+                />
+            </form>
         </div>
-        <div>
-            <input
-                id="todoInput"
-                type="text"
-                placeholder="What to do?..."
-                required
-            />
-            <ul id="todoList"></ul>
+        <div class="container hidden">
+            <div id="clockForm">
+                <p>00:00:00</p>
+            </div>
+            <div>
+                <form id="todoForm">
+                    <input
+                        type="text"
+                        placeholder="What to do?..."
+                        required
+                    />
+                </form>
+                <ul id="todoList"></ul>
+            </div>
         </div>
     </div>
+    <script type="text/javascript" src="js/user.js"></script>
+    <script type="text/javascript" src="js/clock.js"></script>
+    <script type="text/javascript" src="js/todoList.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
