@@ -1,16 +1,24 @@
+.clockBox{
+    text-align: center;
+}
+
 #clock{
-    width: 210px;
-    height: fit-content;
     display: inline-block;
-    position: absolute;
     background-color: transparent;
     text-align: center;
     border-radius: 10px;
-    top: 15px;
-    right: 35px;
+    vertical-align: middle;
 }
 
 #clock p{
-    font-size: 25px;
-    text-align: right;
+    font-size: 50px;
+    text-align: center;
+}
+
+#weather{
+    vertical-align: middle;
+}
+
+#userLocation{
+    display: block;
 }

@@ -14,7 +14,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="hidden">
             <div id="selector" class="gg-shape-triangle"></div>
             <button class="nav-clock gg-time"></button>
             <button class="nav-todo gg-play-list-check"></button>
@@ -35,9 +35,6 @@
             </form>
         </div>
         <div class="main container hidden">
-            <div id="clock">
-                <p>00:00:00</p>
-            </div>
             <h1 id="greetings"></h1>
             <h2 id="username"></h2>
             <div class="sub container todoBox">
@@ -52,13 +49,14 @@
                 <ul id="todoList"></ul>
             </div>
             <div class="sub container clockBox hidden">
-                <div>
-                    <span id="userLocation"></span>
-                    <span id="weather"></span>  
+                <img id="weather" />
+                <div id="clock">
+                    <p>00:00:00</p>
                 </div>
+                <span id="userLocation"></span>
             </div>
             <div class="sub container calendarBox hidden">
-
+                
             </div>
         </div>
     </main>
