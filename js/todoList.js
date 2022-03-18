@@ -9,17 +9,21 @@ function loadTodoList(){
     if(_todos === null) return;
 
     todos = _todos;
-
+    todoList.innerHTML = '';
     todos.forEach(el => {
         const list = document.createElement('li');
+        const div = document.createElement('div');
         const span = document.createElement('span');
         const delBtn = document.createElement('button');
     
-        delBtn.innerText = '❌';
-        delBtn.addEventListener("click", delTodoList);
+        div.className = "todoText";
+        div.appendChild(span);
         span.innerText = el.todo;
+        delBtn.classList.add("gg-close-r");
+        delBtn.classList.add("removeButton");
+        delBtn.addEventListener("click", delTodoList);
         list.id = el.id;
-        list.appendChild(span);
+        list.appendChild(div);
         list.appendChild(delBtn);
         todoList.appendChild(list);
     });

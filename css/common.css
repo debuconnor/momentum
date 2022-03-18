@@ -1,0 +1,25 @@
+body {
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+h1, h2, p{
+    color: white;
+    margin: 10px 0;
+}
+
+form{
+    text-align: center;
+}
+
+form input{
+    display: inline-block;
+}

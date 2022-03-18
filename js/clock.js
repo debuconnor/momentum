@@ -1,4 +1,4 @@
-const clockForm = document.getElementById("clockForm");
+const clockForm = document.getElementById("clock");
 
 function getTime(){
     const currentTime = Date.now();

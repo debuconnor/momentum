@@ -4,42 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
+    <!-- Import External Modules Start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Import End -->
+    <link rel="stylesheet" href="css/style.css" />
     <title>Connor's Momentum</title>
 </head>
 <body>
     <header>
-        <p>Welcome!</p>
+        <nav>
+            <div id="selector" class="gg-shape-triangle"></div>
+            <button class="nav-clock gg-time"></button>
+            <button class="nav-todo gg-play-list-check"></button>
+            <button class="nav-calendar gg-calendar-dates"></button>
+        </nav>
     </header>
-    <div>
+    <main>
+        <div class="background"></div>
         <div class="container">
+            <h1>Welcome,</h1>
+            <h2>Let me know your name</h2>
             <form id="nameForm">
                 <input
                     type="text"
-                    placeholder="Please let me know your name ..."
                     required
                 />
+                <button type="submit" class="submitButton gg-check-r"></button>
             </form>
         </div>
-        <div class="container hidden">
-            <div id="clockForm">
+        <div class="main container hidden">
+            <div id="clock">
                 <p>00:00:00</p>
             </div>
-            <div>
+            <h1 id="greetings"></h1>
+            <h2 id="username"></h2>
+            <div class="sub container todoBox">
                 <form id="todoForm">
                     <input
                         type="text"
-                        placeholder="What to do?..."
+                        placeholder="What to do?"
                         required
                     />
+                    <button type="submit" class="submitButton gg-check-r"></button>
                 </form>
                 <ul id="todoList"></ul>
             </div>
+            <div class="sub container clockBox hidden">
+                <div>
+                    <span id="userLocation"></span>
+                    <span id="weather"></span>  
+                </div>
+            </div>
+            <div class="sub container calendarBox hidden">
+
+            </div>
         </div>
-    </div>
-    <script type="text/javascript" src="js/user.js"></script>
-    <script type="text/javascript" src="js/clock.js"></script>
-    <script type="text/javascript" src="js/todoList.js"></script>
-    <script type="text/javascript" src="./main.js"></script>
+    </main>
+    <script src="js/env.js"></script>
+    <script defer type="text/javascript" src="js/nav.js"></script>
+    <script defer type="text/javascript" src="js/user.js"></script>
+    <script defer type="text/javascript" src="js/greetings.js"></script>
+    <script defer type="text/javascript" src="js/clock.js"></script>
+    <script defer type="text/javascript" src="js/todoList.js"></script>
+    <script defer type="text/javascript" src="js/weather.js"></script>
+    <script defer type="text/javascript" src="./main.js"></script>
 </body>
 </html>

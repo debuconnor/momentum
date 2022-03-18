@@ -1,0 +1,43 @@
+nav{
+    display: flex;
+    position: fixed;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 40px;
+    gap: 60px;
+    background-color: rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    width: 300px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+.nav-todo, 
+.nav-calendar, 
+.nav-clock{
+    transform: scale(var(--ggs, 2));
+    background-color: transparent;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.nav-todo{
+    margin-top: 5px;
+}
+
+nav button{
+    border: none;
+}
+
+#selector{
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    transition: left ease-out 0.3s;
+    left: 47%;
+}
+
+#selector::before{
+    background-color: black;
+}

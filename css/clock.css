@@ -1,0 +1,16 @@
+#clock{
+    width: 210px;
+    height: fit-content;
+    display: inline-block;
+    position: absolute;
+    background-color: transparent;
+    text-align: center;
+    border-radius: 10px;
+    top: 15px;
+    right: 35px;
+}
+
+#clock p{
+    font-size: 25px;
+    text-align: right;
+}
