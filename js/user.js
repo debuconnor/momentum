@@ -25,7 +25,7 @@ function loadUser(){
     else if(currentHour >= 19 && currentHour < 21){
         text = "Hope you had a great day."
     }
-    else if(currentHour >= 21 && currentHour < 6){
+    else if(currentHour >= 21 || currentHour < 6){
         text = "Sweet dreams."
     }
 
