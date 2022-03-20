@@ -28,7 +28,7 @@ function onGeoError(){
 
 function getWeatherIcon(weather){
     weather.replace('n', 'd');
-    const iconUrl = `http://openweathermap.org/img/wn/${weather}@2x.png`;
+    const iconUrl = `img/weather/${weather}@2x.png`;
     
     return iconUrl;
 }
