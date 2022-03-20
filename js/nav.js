@@ -16,13 +16,8 @@ function moveSelector(positionX){
 function onElementMouseover(e){
     const parentLeft = navEl.getBoundingClientRect().left;
     const positionLeft = e.target.getBoundingClientRect().left;
-    let adjustX = 8;
     
-    if(e.target.className.indexOf('nav-todo') !== -1){
-        adjustX = 4;
-    }
-
-    moveSelector(positionLeft - parentLeft + adjustX);
+    moveSelector(positionLeft - parentLeft);
 }
 
 function onElementClick(e){

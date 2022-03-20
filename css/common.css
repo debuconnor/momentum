@@ -8,7 +8,7 @@ h1{
 }
 
 h2{
-    font-size: 30px;
+    font-size: 26px;
 }
 
 h1, h2, p{
@@ -22,4 +22,14 @@ form{
 
 form input{
     display: inline-block;
+}
+
+.message{
+    color: black;
+    display: none;
+}
+
+@media screen and (max-width: 767px){
+    header, main{ display: none; }
+    .message{ display: block; }
 }
