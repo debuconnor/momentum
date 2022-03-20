@@ -20,6 +20,10 @@ nav{
     cursor: pointer;
 }
 
+.nav-clock{
+    color: transparent;
+}
+
 .nav-clock,
 .nav-clock::after{
     border-color: lightgray;
@@ -40,6 +44,7 @@ nav button{
     overflow: hidden;
     transition: left ease-out 0.3s;
     left: 52.3px;
+    border-bottom: lightgray;
 }
 
 #selector::before{
