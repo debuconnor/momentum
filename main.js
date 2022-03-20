@@ -1,6 +1,7 @@
 loadUser();
 loadTodoList();
 setGreetings();
+setBackgroundImg();
 nameForm.addEventListener("submit", onNameFormSubmit);
 todoForm.addEventListener("submit", onTodoFormSubmit);
 

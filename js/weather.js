@@ -10,6 +10,7 @@ function getWeatherData(url, lat, lng){
                                     frameborder="0" style="border:0"
                                     src="https://www.google.com/maps/embed/v1/place?key=${config.GOOGLE_MAPS_API_KEY}&q=${lat},${lng}&zoom=7" allowfullscreen>
                                 </iframe>`;
+        weatherEl.alt = data.weather[0].main;
         weatherEl.src = getWeatherIcon(data.weather[0].icon);
     });
 }

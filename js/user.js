@@ -13,19 +13,19 @@ function loadUser(){
     let text = "Have a good day !"
     username = localStorage.getItem(KEY_USERNAME);
 
-    if(currentHour >= 7){
+    if(currentHour >= 6 && currentHour < 12){
         text = "Don't forget eating breakfast!";
     }
-    else if(currentHour >= 12){
+    else if(currentHour >= 12 && currentHour < 12){
         text = "Enjoy your lunch!"
     }
-    else if(currentHour >= 13){
+    else if(currentHour >= 13 && currentHour < 19){
         text = "Have a good day!"
     }
-    else if(currentHour >= 18){
-        text = "Hope you have a great day."
+    else if(currentHour >= 19 && currentHour < 21){
+        text = "Hope you had a great day."
     }
-    else if(currentHour >= 21 || currentHour <= 6){
+    else if(currentHour >= 21 && currentHour < 6){
         text = "Sweet dreams."
     }
 
