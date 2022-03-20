@@ -1,5 +1,5 @@
 const backgroundEl = document.querySelector(".background");
-const imagePrefix = '../img/';
+const imagePrefix = 'img/';
 const imageSuffix = '.JPG';
 const IMAGE_COUNT = 5;
 
