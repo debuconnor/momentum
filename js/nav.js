@@ -1,9 +1,11 @@
 const navEl                 = document.querySelector("nav")
 const navClockEl            = navEl.querySelector(".nav-clock");
 const navTodoEl             = navEl.querySelector(".nav-todo");
+const navAboutEl            = navEl.querySelector(".nav-about");
 const selectorEl            = document.getElementById("selector");
 const todoBoxEl             = document.querySelector(".todoBox");
 const clockBoxEl            = document.querySelector(".clockBox");
+const aboutBoxEl            = document.querySelector(".aboutBox");
 const containerEl           = document.querySelector(".main.container");
 const HIDDEN_CLASSNAME      = 'hidden';
 
@@ -26,10 +28,17 @@ function onElementClick(e){
         if(activeNav.indexOf('nav-clock') !== -1){
             todoBoxEl.classList.add(HIDDEN_CLASSNAME);
             clockBoxEl.classList.remove(HIDDEN_CLASSNAME);
+            aboutBoxEl.classList.add(HIDDEN_CLASSNAME);
         }
         else if(activeNav.indexOf('nav-todo') !== -1){
             todoBoxEl.classList.remove(HIDDEN_CLASSNAME);
             clockBoxEl.classList.add(HIDDEN_CLASSNAME);
+            aboutBoxEl.classList.add(HIDDEN_CLASSNAME);
+        }
+        else if(activeNav.indexOf('nav-about') !== -1){
+            todoBoxEl.classList.add(HIDDEN_CLASSNAME);
+            clockBoxEl.classList.add(HIDDEN_CLASSNAME);
+            aboutBoxEl.classList.remove(HIDDEN_CLASSNAME);
         }
         containerEl.style.height = '400px';
     }, 300);
@@ -37,5 +46,7 @@ function onElementClick(e){
 
 navClockEl.addEventListener("mouseover", onElementMouseover);
 navTodoEl.addEventListener("mouseover", onElementMouseover);
+navAboutEl.addEventListener("mouseover", onElementMouseover);
 navClockEl.addEventListener("click", onElementClick);
 navTodoEl.addEventListener("click", onElementClick);
+navAboutEl.addEventListener("click", onElementClick);
